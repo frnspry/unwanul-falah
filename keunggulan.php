@@ -1,1 +1,0 @@
-<p>anjay nyobain bang</p>
