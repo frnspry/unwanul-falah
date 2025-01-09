@@ -1,9 +1,10 @@
 /* Font URL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/* Setting Awal */
 :root {
     --primary: #ffffff;
-    --secondary: #00b60f;
+    --secondary: #04800f;
     --black: #333;
     --white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
@@ -58,15 +59,17 @@ section {
     display: inline-block;
     margin-top: 1rem;
     padding: 1rem 2rem;
-    background: var(--primary);
+    background: var(--secondary);
     border-radius: .5rem;
-    color: var(--white);
+    color: var(--primary);
     font-size: 1.5rem;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .btn:hover {
-    background: var(--secondary);
+    background: var(--primary);
+    color: var(--secondary)
 }
 
 /* header */
@@ -123,24 +126,21 @@ section {
 .header .navbar ul li:hover>ul {
     display: initial;
 }
-
-#menu-btn {
-    display: none;
-    font-size: 2.5rem;
-    margin-left: 1.7rem;
-    cursor: pointer;
-    color: var(--white);
-}
-
-#menu-btn:hover {
-    color: var(--black);
-}
-
 /* end */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Warna overlay */
+    z-index: 2; /* Pastikan overlay berada di atas gambar */
+}
 
 .carousel-inner img {
     height: 500px; /* Ubah sesuai kebutuhan */
     object-fit: cover; /* Agar gambar tetap proporsional */
+    z-index: 1;
 }
 
 .carousel-caption {
@@ -149,7 +149,7 @@ section {
     top: 70%; /* Geser ke tengah vertikal */
     left: 50%; /* Geser ke tengah horizontal */
     transform: translate(-50%, -50%); /* Pastikan teks sepenuhnya di tengah */
-    z-index: 10; /* Pastikan teks ada di atas gambar */
+    z-index: 3;
     color: white; /* Warna teks */
 }
 body {
