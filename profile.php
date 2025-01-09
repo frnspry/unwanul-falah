@@ -52,6 +52,24 @@ include("template/header.php");
             <img alt="Photo of a man speaking into a microphone" height="400" src="https://storage.googleapis.com/a1aa/image/f2UyM8ZyPtWPM6PbkaOrFMCi7GXLYCVqEkfoym65yRLzgQDUA.jpg" width="300"/>
         </div>
     </div>
+    <div class="section">
+        <div class="visi">
+            <h2>Visi</h2>
+            <p>
+                el sejarah 
+            </p>
+            
+        </div>
+    </div>
+    <div class="section">
+        <div class="misi">
+            <h2>Misi</h2>
+            <p>
+                el sejarah 
+            </p>
+            
+        </div>
+    </div>
 </main>
 
 <?php

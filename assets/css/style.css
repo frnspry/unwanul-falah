@@ -73,6 +73,7 @@ section {
 }
 
 /* header */
+/* Base styles for the navbar */
 .header {
     position: fixed;
     top: 0;
@@ -89,13 +90,21 @@ section {
     height: var(--navbar-height);
 }
 
+.header .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .header .navbar ul {
     list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .header .navbar ul li {
     position: relative;
-    float: left;
 }
 
 .header .navbar ul li a {
@@ -118,15 +127,77 @@ section {
     display: none;
 }
 
-.header .navbar ul li ul {
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+.header .navbar ul li:hover > ul {
+    display: block;
 }
 
-.header .navbar ul li:hover>ul {
-    display: initial;
+/* Menu button for smaller screens */
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--white);
 }
+
+#menu-btn:hover {
+    color: var(--black);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 1.5rem 5%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .header .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--primary);
+        padding: 1rem 0;
+    }
+
+    .header .navbar.active {
+        display: flex;
+    }
+
+    .header .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header .navbar ul li {
+        width: 100%;
+    }
+
+    .header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+        border-top: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem 3%;
+    }
+
+    .header .navbar ul li a {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
 /* end */
+
+/* profile */
 .overlay {
     position: absolute;
     top: 0;
@@ -171,7 +242,7 @@ body {
 .content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
 }
 .content img {
     max-width: 100%;
@@ -219,4 +290,38 @@ body {
     max-width: 300px;
     height: auto;
     margin: 20px;
+}
+
+.visi{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.visi h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.visi p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.misi{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.misi h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.misi p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
