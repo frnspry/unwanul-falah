@@ -152,3 +152,71 @@ section {
     z-index: 10; /* Pastikan teks ada di atas gambar */
     color: white; /* Warna teks */
 }
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.section:nth-child(odd) {
+    background-color: #ffffff;
+}
+.section:nth-child(even) {
+    background-color: #f5f7fa;
+}
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+.content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+.content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.quote-text {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+.quote-text p {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.quote-text .author {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.quote-text .position {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+}
+.quote img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+}
