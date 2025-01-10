@@ -105,7 +105,7 @@ include ("template/header.php");
                     <span class="text-green">Madrasah</span><span class="text-dark">?</span> 
                     </h2>
                 </div>
-                <div class="container"  data-aos="fade-up">
+                <div class="container"  data-aos="fade-in">
                     <div class="row align-items-center">
                     <!-- Gambar di kiri -->
                     <div class="col-md-6 text-center">
