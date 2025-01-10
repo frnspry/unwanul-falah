@@ -5,6 +5,7 @@
 :root {
     --primary: #ffffff;
     --secondary: #04800f;
+    --third: #E8E8E8;
     --black: #333;
     --white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
@@ -144,6 +145,81 @@ section {
     color: var(--black);
 }
 
+.custom-box {
+    position: relative;
+    top: 75%; /* Atur sesuai kebutuhan, sedikit menutupi carousel */
+    left: 50%;
+    transform: translate(-50%, -10%); /* Agar box berada di tengah */
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 4; /* Pastikan box berada di atas carousel */
+    width: 90%; /* Atur lebar box */
+  }
+
+  .custom-box h1 {
+    font-size: 30px;
+  }
+
+  .custom-box h3 {
+    font-size: 20px;
+  }
+
+  .custom-box img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    color: var(--secondary); /* Warna ikon */
+}
+
+.card.h-100.shadow-sm.bg-primary.text-white .bi.bi-book{
+    color: white; /* Warna putih */
+}
+
+
+.bg-primary {
+    background-color: var(--secondary) !important; /* Bootstrap biru */
+}
+
+.bg-third {
+    background-color: var(--third);
+  }
+
+.text-green {
+    color: var(--secondary);
+}
+
+.bg-img {
+    height: 50vh; /* Menetapkan tinggi container agar memenuhi layar */
+    background: rgba(0, 0, 0, .65) url('../img/elgato1.png'); /* Ganti dengan URL gambar Anda */
+    background-blend-mode: darken;
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan ukuran container */
+    background-position: center; /* Menempatkan gambar di tengah container */
+    background-attachment: fixed; /* Gambar latar belakang tetap saat di-scroll */
+    }
+
+    .bg-img .content {
+        padding: 20px;
+        color: white;
+    }
+
+
+    
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .header {
@@ -212,6 +288,7 @@ section {
     height: 500px; /* Ubah sesuai kebutuhan */
     object-fit: cover; /* Agar gambar tetap proporsional */
     z-index: 1;
+    position: relative;
 }
 
 .carousel-caption {
