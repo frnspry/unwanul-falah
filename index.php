@@ -5,8 +5,8 @@ include ("template/header.php");
             <div id="carouselMadrasah" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
                 <div class="carousel-inner">
                     <div class="carousel-caption text-center">
-                        <h3>Welcome to Madrasah</h3>
-                        <p>Madrasah Terpadu dan Maju.</p>
+                        <h3>Selamat Datang</h3>
+                        <p>MADRASAH ALIYAH UNWANUL FALAH</p>
                         <a href="#" class="btn btn-primary border-0">Pendaftaran</a>
                     </div>
                     <div class="overlay"></div>
@@ -29,9 +29,8 @@ include ("template/header.php");
                 <div class="row">
                     <!-- Kolom Kiri -->
                     <div class="col-md-8">
-                    <h1>Madrasah Unwanul Falah</h1>
-                    <h3>Madrasah Terpadu Membangun Negeri</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero...</p>
+                    <h1>Madrasah Aliyah Unwanul Falah</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt odio non nulla mollis pulvinar. Maecenas ornare velit at tellus tincidunt tempus. In ullamcorper tincidunt massa in finibus. Quisque fermentum nibh malesuada tincidunt laoreet...</p>
                     <a href="#" class="btn btn-primary border-0">Read More</a>
                     </div>
                     <!-- Kolom Kanan -->
@@ -42,10 +41,10 @@ include ("template/header.php");
                 </div>
             </div>
 
-            <div class="container py-5" data-aos="fade-up">
+            <div class="container py-5 program" data-aos="fade-up">
                 <div class="text-center mb-4">
-                    <h4>Program Kami</h4>
-                    <h2 class="fw-bold">Madrasah Terpadu</h2>
+                    <h4 style="font-size: 20px">Program Kami</h4>
+                    <h2 class="fw-bold" style="font-size: 30px">Madrasah Aliyah Unwanul Falah</h2>
                     <hr class="mx-auto" style="width: 50px; border: 2px solid #ccc;">
                 </div>
 

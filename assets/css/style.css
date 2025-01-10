@@ -148,23 +148,35 @@ section {
 /* Box index awal */
 .custom-box {
     position: relative;
-    top: 75%; /* Atur sesuai kebutuhan, sedikit menutupi carousel */
+    top: 75%; /* Atur sesuai kebutuhan */
     left: 50%;
-    transform: translate(-50%, -10%); /* Agar box berada di tengah */
+    transform: translate(-50%, -10%);
     background-color: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 4; /* Pastikan box berada di atas carousel */
-    width: 90%; /* Atur lebar box */
-  }
+    z-index: 4;
+    width: 80%;
+    display: flex; /* Susun elemen secara vertikal */
+    flex-direction: column;
+    align-items: flex-start; /* Rata kiri */
+    gap: 10px; /* Jarak antar elemen */
+}
+
 
   .custom-box h1 {
     font-size: 30px;
   }
 
-  .custom-box h3 {
-    font-size: 20px;
+  .custom-box .col-md-8 p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  .custom-box p{
+    font-size: 15px;
+    margin-bottom: 15px;
   }
 
   .custom-box img {
@@ -172,11 +184,23 @@ section {
     border-radius: 10px;
   }
 
+  .custom-box .col-md-8 {
+    padding: 20px 20px 20px 20px;
+  }
+
   /* Program kami index */
 .card {
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card .card-title {
+    font-size:20px;
+}
+
+.card .card-text {
+    font-size:15px;
 }
 
 .card:hover {
@@ -202,6 +226,16 @@ section {
     background-color: var(--third);
   }
 
+.container-fluid.py-5.bg-third h2 {
+    font-size: 30px; /* Atur ukuran font sesuai kebutuhan */
+}
+
+.container-fluid.py-5.bg-third p {
+    font-size: 15px; /* Atur ukuran font sesuai kebutuhan */
+    line-height: 1.6; /* Opsional, untuk mengatur jarak antar baris */
+    text-align: justify;
+}
+
 .text-green {
     color: var(--secondary);
 }
@@ -221,13 +255,13 @@ section {
     }
 
     .bag-row h3 {
-        font-size: 5rem; /* Ukuran teks untuk angka */
+        font-size: 30px; /* Ukuran teks untuk angka */
         font-weight: bold;
         padding-top: 10px;
     }
     
     .bag-row p {
-        font-size: 2rem; /* Ukuran teks untuk keterangan */
+        font-size: 20px; /* Ukuran teks untuk keterangan */
         color: black; /* Warna teks keterangan */
     }
     
@@ -325,13 +359,18 @@ section {
 
 .carousel-caption {
     position: absolute;
-    font-size: 30px;
-    top: 70%; /* Geser ke tengah vertikal */
+    font-size: 40px;
+    top: 60%; /* Geser ke tengah vertikal */
     left: 50%; /* Geser ke tengah horizontal */
-    transform: translate(-50%, -50%); /* Pastikan teks sepenuhnya di tengah */
+    transform: translate(-50%, -50%);
     z-index: 3;
-    color: white; /* Warna teks */
+    color: white;
+    white-space: nowrap; /* Paksa teks tetap dalam satu baris */
+    text-align: center; /* Teks tetap di tengah */
+    width: 100%; /* Pastikan elemen memiliki lebar penuh */
 }
+
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
