@@ -138,11 +138,11 @@ section {
     font-size: 2.5rem;
     margin-left: 1.7rem;
     cursor: pointer;
-    color: var(--white);
+    color: var(--black);
 }
 
 #menu-btn:hover {
-    color: var(--black);
+    color: var(--secondary);
 }
 
 /* Box index awal */
@@ -557,46 +557,43 @@ body {
 }
 
 /* footer */
-
-/* Bagian konten, misalnya untuk teks dan gambar responsif */
-@media (max-width: 768px) {
-    .container .row {
-        padding-bottom: 30px;
-        padding-top: 10px;
-    }
-
-    .container-fluid.py-5.bg-third {
-        padding-top: 30px; /* Atur padding untuk tampilan lebih kecil */
-    }
-
-    .container-fluid.py-5.bg-third .container {
-        padding-bottom: 20px;
-    }
-
-    .container-fluid.py-5.bg-third .text-center.mb-5 {
-        padding-top: 20px; /* Sesuaikan padding pada teks */
-    }
-
-    .container-fluid.py-5.bg-third h2 {
-        font-size: 24px; /* Kurangi ukuran font */
-    }
-
-    .container-fluid.py-5.bg-third p {
-        font-size: 14px; /* Kurangi ukuran font */
-    }
-
-    .custom-box h1 {
-        font-size: 25px; /* Sesuaikan ukuran font */
-    }
-
-    .custom-box .col-md-8 p {
-        font-size: 14px; /* Sesuaikan ukuran font */
-    }
-
-    .custom-box img {
-        max-width: 100%;
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 834px) {
+    .bg-img {
+        height: 20vh; /* Mengurangi tinggi untuk layar lebih kecil */
     }
 }
+
+@media (max-width: 768px) {
+    .bg-img {
+        height: 25vh; /* Mengurangi tinggi untuk layar lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-img {
+        height: 30vh; /* Mengurangi tinggi lebih kecil lagi untuk perangkat mobile */
+    }
+}
+
+.bg-img .content {
+    padding: 20px;
+    color: white;
+}
+
+/* Responsif untuk konten */
+@media (max-width: 768px) {
+    .bg-img .content {
+        padding: 15px; /* Mengurangi padding pada layar lebih kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    .bg-img .content {
+        padding: 10px; /* Mengurangi padding lebih kecil lagi */
+    }
+}
+
 
 /* Untuk layar lebih kecil (mobile) */
 @media (max-width: 480px) {
