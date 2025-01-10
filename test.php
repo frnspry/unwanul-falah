@@ -127,6 +127,36 @@ include ("template/header.php");
                 </div>
             </div>
 
+            <div class="container py-5 bag-row" data-aos="fade-up">
+                <div class="row text-center">
+                    <!-- Kolom pertama -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-school fs-1"></i> <!-- Ikon Bootstrap -->
+                        </div>
+                        <h3>1000 m²</h3>
+                        <p>Luas Tanah</p>
+                    </div>
+                    <!-- Kolom kedua -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-calendar-days fs-1"></i> <!-- Ikon Bootstrap -->
+                        </div>
+                        <h3>2006</h3>
+                        <p>Tahun Berdiri</p>
+                    </div>
+                    <!-- Kolom ketiga -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-circle-check fs-1"></i> <!-- Ikon Bootstrap -->
+                        </div>
+                        <h3>"B"</h3>
+                        <p>Akreditasi</p>
+                    </div>
+                </div>
+            </div>
+
+
         </main>
 <?php
 include ("template/footer.php");

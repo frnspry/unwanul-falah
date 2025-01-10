@@ -1,78 +1,164 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-
-        <!-- Bootstrap CSS v5.3.3 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <!-- CSS file -->
-        <link href="assets/css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Profil</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Keunggulan</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Organisasi
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">Pendaftaran</a>
-                            </li>
-                        </ul>
+<?php
+include ("template/header.php");
+?>
+        <main>
+            <div id="carouselMadrasah" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    <div class="carousel-caption text-center">
+                        <h3>Welcome to Madrasah</h3>
+                        <p>Madrasah Terpadu dan Maju.</p>
+                        <a href="#" class="btn btn-primary border-0">Pendaftaran</a>
+                    </div>
+                    <div class="overlay"></div>
+                    <div class="carousel-item active">
+                    <img src="assets/img/elgato1.png" class="d-block w-100" alt="elg">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/elgato2.png" class="d-block w-100" alt="elg">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/elgato1.png" class="d-block w-100" alt="elg">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="assets/img/elgato2.png" class="d-block w-100" alt="elg">
                     </div>
                 </div>
-            </nav>
-        </header>
-        <main></main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+            </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-        
-    </body>
-</html>
+            <div class="custom-box">
+                <div class="row">
+                    <!-- Kolom Kiri -->
+                    <div class="col-md-8">
+                    <h1>Madrasah Unwanul Falah</h1>
+                    <h3>Madrasah Terpadu Membangun Negeri</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero...</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                    <!-- Kolom Kanan -->
+                    <div class="col-md-4 text-center">
+                    <img src="assets/img/obama.png" alt="Foto Kepala Sekolah">
+                    <p class="mt-3"><strong>Pak Obama</strong><br>Mantan Presiden AS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-5" data-aos="fade-up">
+                <div class="text-center mb-4">
+                    <h4>Program Kami</h4>
+                    <h2 class="fw-bold">Madrasah Terpadu</h2>
+                    <hr class="mx-auto" style="width: 50px; border: 2px solid #ccc;">
+                </div>
+
+                <div class="row text-center">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="icon mb-3">
+                                    <i class="bi bi-building fs-1"></i> <!-- Ikon Bootstrap -->
+                                </div>
+                                <h5 class="card-title fw-bold">Kurikulum Terpadu</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero.
+                                </p>
+                                <a href="#" class="btn btn-primary">Info Detail <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm bg-primary text-white">
+                            <div class="card-body">
+                                <div class="icon mb-3">
+                                    <i class="bi bi-book fs-1"></i> <!-- Ikon Bootstrap -->
+                                </div>
+                                <h5 class="card-title fw-bold">Kegiatan Ekstrakulikuler</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero.
+                                </p>
+                                <a href="#" class="btn btn-primary">Info Detail <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="icon mb-3">
+                                    <i class="bi bi-clock fs-1"></i> <!-- Ikon Bootstrap -->
+                                </div>
+                                <h5 class="card-title fw-bold">Kegiatan Intrakulikuler</h5>
+                                <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero..
+                                </p>
+                                <a href="#" class="btn btn-primary">Info Detail <i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid py-5 bg-third">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">
+                    <span class="text-dark">Kenapa</span> 
+                    <span class="text-green">Madrasah</span><span class="text-dark">?</span> 
+                    </h2>
+                </div>
+                <div class="container"  data-aos="fade-in">
+                    <div class="row align-items-center">
+                    <!-- Gambar di kiri -->
+                    <div class="col-md-6 text-center">
+                        <img src="assets/img/madrasah.png" alt="Madrasah Image" class="img-fluid">
+                    </div>
+                    <!-- Paragraf di kanan -->
+                    <div class="col-md-6">
+                        <p>
+                        Madrasah memiliki program pendidikan unggulan yang tidak hanya mengutamakan ilmu pengetahuan 
+                        tetapi juga memperhatikan nilai-nilai keislaman. Kami percaya bahwa pendidikan yang terpadu 
+                        akan memberikan dampak positif bagi generasi masa depan.
+                        </p>
+                        <p>
+                        Dengan fasilitas lengkap dan tenaga pengajar profesional, Madrasah kami adalah pilihan terbaik 
+                        untuk mempersiapkan anak Anda menghadapi dunia modern dengan tetap berpegang pada nilai-nilai agama.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-5 bag-row" data-aos="fade-up">
+                <div class="row text-center">
+                    <!-- Kolom pertama -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-school fs-1"></i> <!-- Ikon Bootstrap -->
+                        </div>
+                        <h3>1000 m²</h3>
+                        <p>Luas Tanah</p>
+                    </div>
+                    <!-- Kolom kedua -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-calendar-days fs-1"></i> <!-- Ikon Bootstrap -->
+                        </div>
+                        <h3>2006</h3>
+                        <p>Tahun Berdiri</p>
+                    </div>
+                    <!-- Kolom ketiga -->
+                    <div class="col-md-4">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-circle-check fs-1"></i> <!-- Ikon Bootstrap -->
+                        </div>
+                        <h3>"B"</h3>
+                        <p>Akreditasi</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+<?php
+include ("template/footer.php");
+?>
+       

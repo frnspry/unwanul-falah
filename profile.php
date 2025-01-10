@@ -9,6 +9,7 @@ include("template/header.php");
             <div class="carousel-caption text-center">
                 <h3>Profile Madrasah</h3>
             </div>
+            <div class="overlay"></div>
             <div class="carousel-item active">
                 <img src="assets/img/elgato1.png" class="d-block w-100" alt="elg">
             </div>
@@ -27,7 +28,7 @@ include("template/header.php");
     <!-- History Section -->
     <div class="container py-5" data-aos="fade-up">
         <div class="section">
-            <div class="content">
+            <div class="content content-profile-1">
                 <img src="assets/img/obama.png" alt="Foto Kepala Sekolah" class="img-fluid">
                 <div>
                     <h2>SEJARAH</h2>
