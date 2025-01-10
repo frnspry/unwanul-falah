@@ -349,11 +349,34 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-.content img {
-    max-width: 100%;
+.image-row {
+    display: flex;
+    justify-content: space-between; /* Memberikan jarak di antara elemen */
+    align-items: center; /* Meratakan elemen secara vertikal */
+}
+.image-row img {
+    max-width: 500px; /* Membuat gambar responsif */
     height: auto;
-    display: block;
-    margin: 0 auto 20px;
+    border-radius: 15px;
+}
+
+.text-left, .text-right {
+    flex: 1; 
+    text-align: center; 
+}
+.content {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+.content img {
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+    border-radius: 15px;
+}
+.content .text {
+    max-width: 600px; 
 }
 .content h2 {
     font-size: 24px;
@@ -365,6 +388,8 @@ body {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
+
 .quote {
     display: flex;
     align-items: center;
@@ -395,6 +420,7 @@ body {
     max-width: 300px;
     height: auto;
     margin: 20px;
+    border-radius: 15px;
 }
 
 .visi{
