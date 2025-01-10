@@ -32,12 +32,13 @@
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="#" style="text-decoration:none;">Home</a></li>
+                <li><a href="#" style="text-decoration:none;">Beranda</a></li>
                 <li><a href="profile.php" style="text-decoration:none;">Profil</a></li>
                 <li><a href="#" style="text-decoration:none;">Keunggulan</a></li>
                 <li><a href="#" style="text-decoration:none;">Organisasi</a></li>
-                <li><a href="#" style="text-decoration:none;">Informasi Tambahan</a></li>
+                <li><a href="#" style="text-decoration:none;">Informasi</a></li>
                 <li><a href="#" style="text-decoration:none;">Pendaftaran</a></li>
+                <li><a href="#" style="text-decoration:none;">Perpustakaan</a></li>
             </ul>
         </nav>
         </header>

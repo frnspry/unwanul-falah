@@ -4,7 +4,7 @@
 /* Setting Awal */
 :root {
     --primary: #ffffff;
-    --secondary: #04800f;
+    --secondary: #3498db;
     --third: #E8E8E8;
     --black: #333;
     --white: #fff;
@@ -217,7 +217,35 @@ section {
         color: white;
     }
 
+    .bag-row {
+        padding: 50px 0;
+    }
 
+    .bag-row .icon {
+        color: var(--secondary); /* Warna ikon */
+    }
+    
+    .bag-row .fs-1 {
+        font-size: 8rem !important; /* Ukuran ikon */
+    }
+
+    .bag-row h3 {
+        font-size: 5rem; /* Ukuran teks untuk angka */
+        font-weight: bold;
+        padding-top: 10px;
+    }
+    
+    .bag-row p {
+        font-size: 2rem; /* Ukuran teks untuk keterangan */
+        color: black; /* Warna teks keterangan */
+    }
+    
+    .bag-row .row {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
     
 
 /* Responsive styles */
