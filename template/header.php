@@ -37,8 +37,8 @@
                 <li><a href="#" style="text-decoration:none;">Keunggulan</a></li>
                 <li><a href="#" style="text-decoration:none;">Organisasi</a></li>
                 <li><a href="#" style="text-decoration:none;">Informasi</a></li>
-                <li><a href="#" style="text-decoration:none;">Pendaftaran</a></li>
                 <li><a href="#" style="text-decoration:none;">Perpustakaan</a></li>
+                <li><a href="#" style="text-decoration:none;">Pendaftaran</a></li>
             </ul>
         </nav>
         </header>
