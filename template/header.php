@@ -27,18 +27,33 @@
     <body>
         <header>
         <header class="header">
-        <div class="logo">
-            <img src="images/BlueHorizonWhite.png" alt="LogoResort" width="75%">
-        </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.php" style="text-decoration:none;">Beranda</a></li>
-                <li><a href="profile.php" style="text-decoration:none;">Profil</a></li>
-                <li><a href="#" style="text-decoration:none;">Keunggulan</a></li>
-                <li><a href="#" style="text-decoration:none;">Organisasi</a></li>
-                <li><a href="#" style="text-decoration:none;">Informasi</a></li>
-                <li><a href="#" style="text-decoration:none;">Perpustakaan</a></li>
-                <li><a href="#" style="text-decoration:none;">Pendaftaran</a></li>
-            </ul>
-        </nav>
+            <div class="logo">
+                <img src="images/BlueHorizonWhite.png" alt="LogoResort" width="75%">
+            </div>
+            <button id="menu-btn" class="navbar-toggler">
+                <i class="bi bi-list"></i> 
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.php" style="text-decoration:none;">Beranda</a></li>
+                    <li><a href="profile.php" style="text-decoration:none;">Profil</a></li>
+                    <li><a href="#" style="text-decoration:none;">Keunggulan</a></li>
+                    <li><a href="#" style="text-decoration:none;">Organisasi</a></li>
+                    <li><a href="#" style="text-decoration:none;">Informasi</a></li>
+                    <li><a href="#" style="text-decoration:none;">Perpustakaan</a></li>
+                    <li><a href="#" style="text-decoration:none;">Pendaftaran</a></li>
+                </ul>
+            </nav>
         </header>
+<script>
+    // Menunggu hingga DOM sepenuhnya dimuat
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuBtn = document.getElementById('menu-btn');
+        const navbar = document.querySelector('.navbar');
+
+        // Event listener untuk toggle navbar
+        menuBtn.addEventListener('click', function() {
+            navbar.classList.toggle('active');
+        });
+    });
+</script>

@@ -344,10 +344,12 @@ section {
         height: auto;
     }
 
+    /* Menampilkan tombol menu (Hamburger Icon) */
     #menu-btn {
         display: block;
     }
 
+    /* Navbar disembunyikan pada perangkat mobile */
     .header .navbar {
         display: none;
         flex-direction: column;
@@ -356,6 +358,7 @@ section {
         padding: 1rem 0;
     }
 
+    /* Navbar ditampilkan ketika tombol menu diklik */
     .header .navbar.active {
         display: flex;
     }
@@ -386,6 +389,7 @@ section {
         padding: 15px;
     }
 }
+
 
 /* end */
 
