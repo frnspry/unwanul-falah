@@ -12,10 +12,10 @@
             <!-- Bagian Kontak -->
             <div class="col-md-6">
                 <div class="contact-info text-left">
-                    <img src="assets/img/logo.png" alt="Logo" class="img-fluid mb-3" style="max-width: 150px;">
+                    <img src="assets/img/obama.png" alt="Foto Kepala Sekolah" class="img-fluid" style="max-width: 150px;">
                     <h4>CONTACT</h4>
                     <p><strong>Pondok Pesantren Daaruttaqwa</strong></p>
-                    <p>Jalan raya Jakarta-Bogor KM 44 Pakansari, Cibinong Bogor, Jawa Barat 16915</p>
+                    <p><i class="bi bi-map"></i> Jl. Sirkuit Sentul Km. 02 RT 02 RW 02 Desa Sentul Kecamatan Babakan Madang Kabupaten Bogor</p>
                     <p><i class="bi bi-telephone"></i> 0813-1914-5285</p>
                     <p><i class="bi bi-envelope"></i> info@daaruttaqwa.sch.id</p>
                 </div>
@@ -24,7 +24,7 @@
             <div class="col-md-6">
                 <div class="map-responsive">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15847.334735486244!2d106.8462486!3d-6.4814539!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c1d7e2e31853%3A0xc1cda9829f6eb6aa!2sPondok%20Pesantren%20Daaruttaqwa!5e0!3m2!1sid!2sid!4v1694186242655!5m2!1sid!2sid" 
+                        src="https://maps.google.com/maps?q=MAS+Unwanul+Falah+Sentul&z=17&output=embed&#038;iwloc=near" 
                         width="600" 
                         height="300" 
                         style="border:0;" 
