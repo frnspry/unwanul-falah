@@ -377,6 +377,7 @@ section {
         width: 100%;
         border-top: none;
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -419,9 +420,9 @@ section {
     transform: translate(-50%, -50%);
     z-index: 3;
     color: white;
-    white-space: nowrap; /* Paksa teks tetap dalam satu baris */
-    text-align: center; /* Teks tetap di tengah */
-    width: 100%; /* Pastikan elemen memiliki lebar penuh */
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -556,3 +557,109 @@ body {
 }
 
 /* footer */
+
+/* Bagian konten, misalnya untuk teks dan gambar responsif */
+@media (max-width: 768px) {
+    .container .row {
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .container-fluid.py-5.bg-third {
+        padding-top: 30px; /* Atur padding untuk tampilan lebih kecil */
+    }
+
+    .container-fluid.py-5.bg-third .container {
+        padding-bottom: 20px;
+    }
+
+    .container-fluid.py-5.bg-third .text-center.mb-5 {
+        padding-top: 20px; /* Sesuaikan padding pada teks */
+    }
+
+    .container-fluid.py-5.bg-third h2 {
+        font-size: 24px; /* Kurangi ukuran font */
+    }
+
+    .container-fluid.py-5.bg-third p {
+        font-size: 14px; /* Kurangi ukuran font */
+    }
+
+    .custom-box h1 {
+        font-size: 25px; /* Sesuaikan ukuran font */
+    }
+
+    .custom-box .col-md-8 p {
+        font-size: 14px; /* Sesuaikan ukuran font */
+    }
+
+    .custom-box img {
+        max-width: 100%;
+    }
+}
+
+/* Untuk layar lebih kecil (mobile) */
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem 3%; /* Sesuaikan padding */
+    }
+
+    .header .navbar ul li a {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .container-fluid.py-5.bg-third h2 {
+        font-size: 20px; /* Kurangi ukuran font lebih kecil */
+    }
+
+    .container-fluid.py-5.bg-third p {
+        font-size: 13px; /* Sesuaikan ukuran font */
+    }
+
+    .custom-box h1 {
+        font-size: 20px; /* Sesuaikan ukuran font */
+    }
+
+    .custom-box .col-md-8 p {
+        font-size: 12px; /* Sesuaikan ukuran font */
+    }
+}
+
+
+/* Responsif untuk Index */
+/* Responsif untuk Kolom */
+@media (max-width: 768px) {
+    .container .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col-md-6 {
+        width: 100%; /* Atur kolom menjadi 100% */
+        margin-bottom: 15px; /* Memberikan jarak antar elemen */
+    }
+}
+
+/* Custom Box Responsif */
+@media (max-width: 768px) {
+    .custom-box {
+        width: 90%; /* Agar kotak menggunakan seluruh lebar layar */
+        padding: 15px; /* Sesuaikan padding */
+    }
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 27px; /* Ukuran font lebih kecil */
+        top: 60%; /* Sedikit lebih tinggi */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption {
+        font-size: 17px; /* Ukuran font lebih kecil */
+        top: 65%; /* Posisi lebih tinggi */
+    }
+}
