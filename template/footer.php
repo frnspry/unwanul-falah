@@ -7,32 +7,63 @@
             <a href="#" class="btn btn-primary border-0">Pendaftaran</a>
         </div>
     </div>
-    <div class="container-fluid py-5 bg-light">
-        <div class="row align-items-center">
-            <!-- Bagian Kontak -->
-            <div class="col-md-6">
-                <div class="contact-info text-left">
-                    <img src="assets/img/obama.png" alt="Foto Kepala Sekolah" class="img-fluid" style="max-width: 150px;">
-                    <h4>CONTACT</h4>
-                    <p><strong>Pondok Pesantren Daaruttaqwa</strong></p>
-                    <p><i class="bi bi-map"></i> Jl. Sirkuit Sentul Km. 02 RT 02 RW 02 Desa Sentul Kecamatan Babakan Madang Kabupaten Bogor</p>
-                    <p><i class="bi bi-telephone"></i> 0813-1914-5285</p>
-                    <p><i class="bi bi-envelope"></i> info@daaruttaqwa.sch.id</p>
+
+    <div class="container-fluid py-5 bg-light contact-section">
+        <div class="row align-items-left">
+            <div class="col-md-6 text-left text-md-start">
+                <img src="assets/img/logo.png" alt="Logo" class="mb-4 logo">
+                <h4>Contact</h4>
+
+                <!-- Baris untuk Alamat -->
+                <div class="row align-items-left mb-3">
+                    <div class="col-auto">
+                      <i class="fa-solid fa-map-location-dot custom-icon"></i>
+                    </div>
+                    <div class="col">
+                        <p class="text-dark mb-0">Jl. Sirkuit Sentul Km. 02 RT 02 RW 02 Desa Sentul Kecamatan Babakan Madang Kabupaten Bogor</p>
+                    </div>
+                </div>
+
+                <!-- Baris untuk Telepon -->
+                <div class="row align-items-left mb-3">
+                    <div class="col-auto">
+                        <i class="fa-solid fa-phone custom-icon"></i>
+                    </div>
+                    <div class="col">
+                        <p class="text-dark mb-0">0813-1914-5285</p>
+                    </div>
+                </div>
+
+                <!-- Baris untuk Email -->
+                <div class="row align-items-left">
+                    <div class="col-auto">
+                        <i class="fa-solid fa-envelope custom-icon"></i>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">
+                            <a href="mailto:info@daaruttaqwa.sch.id" class="text-decoration-none">
+                                info@daaruttaqwa.sch.id
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
+
             <!-- Bagian Peta -->
             <div class="col-md-6">
-                <div class="map-responsive">
+                <div class="map-responsive shadow rounded">
                     <iframe 
                         src="https://maps.google.com/maps?q=MAS+Unwanul+Falah+Sentul&z=17&output=embed&#038;iwloc=near" 
-                        width="600" 
-                        height="300" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy"></iframe>
+                        loading="lazy" 
+                        allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
+    </div>
+
+    <footer class="footer py-3">
+    <div class="container text-center">
+        <p class="mb-0 text-light">Copyright © 2025 MA Unwanul Falah</p>
     </div>
 </footer>
 
