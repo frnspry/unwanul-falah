@@ -27,7 +27,7 @@ include("template/header.php");
     <!-- History Section -->
     <div class="container py-5" data-aos="fade-up">
         <div class="section">
-            <div class="content">
+            <div class="content content-profile-1">
                 <img src="assets/img/obama.png" alt="Foto Kepala Sekolah" class="img-fluid">
                 <div>
                     <h2>SEJARAH</h2>

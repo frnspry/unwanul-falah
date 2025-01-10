@@ -364,26 +364,27 @@ body {
     flex: 1; 
     text-align: center; 
 }
-.content {
+
+.content-profile-1 {
     display: flex; 
     align-items: center; 
     gap: 20px; 
 }
-.content img {
+.content-profile-1 img {
     max-width: 300px;
     height: auto;
     margin: 20px;
     border-radius: 15px;
 }
-.content .text {
+.content-profile-1 .text {
     max-width: 600px; 
 }
-.content h2 {
+.content-profile-1 h2 {
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
 }
-.content p {
+.content-profile-1 p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
