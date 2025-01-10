@@ -663,8 +663,7 @@ body {
     }
 }
 
-/* Responsive Design for 843px */
-@media (max-width: 843px) {
+@media (max-width: 834px) {
     .section {
         padding: 40px 15px; /* Reduce padding */
     }
@@ -693,6 +692,7 @@ body {
     .visi,
     .misi {
         flex-direction: column; /* Stack content vertically */
+        gap: 15px; /* Adjust gap between image and text */
     }
 
     .visi img,
@@ -709,7 +709,25 @@ body {
     .misi .text {
         text-align: center; /* Align text center for better readability */
     }
+
+    .misi li {
+        font-size: 16px; /* Adjust font size */
+        padding-left: 25px; /* Add padding for bullet */
+    }
+
+
+    /* Responsive for image-row */
+    .image-row {
+        flex-direction: column; /* Stack images and text vertically */
+        align-items: center; /* Center the content */
+    }
+
+    .image-row img {
+        max-width: 100%; /* Make images responsive */
+        margin: 10px 0; /* Add margin between images */
+    }
 }
+
 
 /* Responsive Design for 768px */
 @media (max-width: 768px) {
