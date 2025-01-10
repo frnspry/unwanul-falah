@@ -189,6 +189,11 @@ section {
   }
 
   /* Program kami index */
+  .container .row {
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
 .card {
     border: none;
     border-radius: 10px;
@@ -222,9 +227,18 @@ section {
 }
 
 /* Kenapa */
-.bg-third {
+.container-fluid.py-5.bg-third {
     background-color: var(--third);
   }
+
+  .container-fluid.py-5.bg-third .text-center.mb-5 {
+    padding-top: 50px;
+  }
+
+  .container-fluid.py-5.bg-third .container {
+    padding-bottom: 10px;
+  }
+
 
 .container-fluid.py-5.bg-third h2 {
     font-size: 30px; /* Atur ukuran font sesuai kebutuhan */
@@ -242,9 +256,7 @@ section {
 
 
     /* tahun berdiri */
-    .bag-row {
-        padding: 50px 0;
-    }
+
 
     .bag-row .icon {
         color: var(--secondary); /* Warna ikon */
@@ -269,6 +281,8 @@ section {
         display: flex;
         justify-content: space-between;
         text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     
     /* footer */

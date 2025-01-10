@@ -1,9 +1,9 @@
 <footer>
     <div class="container-fluid py-5 bg-img text-center text-white">
         <div class="content">
-            <h3>Mari Membangun Negeri</h3>
-            <h3>Dengan Bergabung Bersama Kami</h3>
-            <p>Daftar sekarang untuk menjadi siswa hebat</p>
+            <h3>Saatnya Menjadi Bagian</h3>
+            <h3>Madrasah Aliyah Unwanul Falah</h3>
+            <p>Penerimaan Peserta Didik Baru</p>
             <a href="#" class="btn btn-primary border-0">Pendaftaran</a>
         </div>
     </div>
