@@ -466,6 +466,11 @@ section {
     #menu-btn {
         display: block;
     }
+    /* Gaya default ikon */
+    #menu-icon {
+        font-size: 24px;
+        transition: transform 0.3s ease;
+    }
 
     /* Navbar disembunyikan pada perangkat mobile */
     .header .navbar {
@@ -543,7 +548,6 @@ section {
     width: 100%;
 }
 
-
 body {
 
     margin: 0;
@@ -557,9 +561,7 @@ body {
 .section:nth-child(odd) {
     background-color: #ffffff;
 }
-.section:nth-child(even) {
-    background-color: #f5f7fa;
-}
+
 .content {
     max-width: 800px;
     margin: 0 auto;
@@ -640,38 +642,82 @@ body {
     border-radius: 15px;
 }
 
-.visi{
+.visi {
     max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    display: flex; /* Gunakan flexbox */
+    flex-direction: row; /* Atur arah elemen secara horizontal */
+    align-items: center; /* Ratakan secara vertikal */
+    text-align: justify;
+    gap: 20px; /* Beri jarak antara gambar dan teks */
 }
 
-.visi h2{
+.visi img {
+    max-width: 300px; /* Batasi ukuran gambar */
+    width: 100%; /* Responsif: gambar mengambil seluruh lebar kontainer jika kecil */
+    height: auto; /* Proporsi gambar tetap */
+    border-radius: 15px; /* Membuat sudut gambar melengkung */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk estetika */
+}
+
+.visi .text {
+    display: flex;
+    flex-direction: column; /* Pastikan h2 selalu di atas p */
+    justify-content: flex-start; /* Pastikan teks dimulai dari atas */
+}
+
+.visi h2 {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 20px;
-}
-.visi p{
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Tambahkan jarak bawah */
 }
 
-.misi{
+.visi p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.misi {
     max-width: 800px;
     margin: 0 auto;
+    display: flex; /* Gunakan flexbox */
+    flex-direction: row-reverse; /* Balikkan arah elemen untuk misi */
+    align-items: center; /* Ratakan secara vertikal */
     text-align: right;
+    gap: 20px; /* Beri jarak antara gambar dan teks */
 }
 
-.misi h2{
+.misi img {
+    max-width: 300px; /* Batasi ukuran gambar */
+    width: 100%; /* Responsif: gambar mengambil seluruh lebar kontainer jika kecil */
+    height: auto; /* Proporsi gambar tetap */
+    border-radius: 15px; /* Membuat sudut gambar melengkung */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan untuk estetika */
+}
+
+.misi .text {
+    display: flex;
+    flex-direction: column; /* Pastikan h2 selalu di atas p */
+    justify-content: flex-start; /* Pastikan teks dimulai dari atas */
+}
+
+.misi h2 {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Tambahkan jarak bawah */
 }
-.misi p{
+.misi ul {
+    list-style: none; /* Hapus gaya default untuk daftar */
+    padding-left: 0; /* Hapus padding kiri */
+}
+
+.misi li {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Beri jarak antara item */
+    position: relative; /* Posisi relatif untuk memberi kontrol atas ikon */
+    padding-left: 30px; /* Beri ruang untuk ikon */
 }
 
 /* footer */
@@ -725,21 +771,155 @@ body {
         font-size: 14px;
         padding: 15px;
     }
+    .visi, .misi {
+        max-width: 100%; /* Penuhi lebar layar */
+        padding: 0 15px; /* Tambahkan padding sisi */
+    }
+    .image-row {
+        justify-content: center; /* Pusatkan elemen jika ruang tidak cukup */
+    }
+    .image-row img {
+        max-width: 90%; /* Gambar memenuhi lebar layar dengan margin */
+        margin: 0 auto; /* Pusatkan gambar */
+    }
+}
 
-    .container-fluid.py-5.bg-third h2 {
-        font-size: 20px; /* Kurangi ukuran font lebih kecil */
+@media (max-width: 834px) {
+    .section {
+        padding: 40px 15px; /* Reduce padding */
     }
 
-    .container-fluid.py-5.bg-third p {
-        font-size: 13px; /* Sesuaikan ukuran font */
+    .content-profile-1 {
+        flex-direction: column; /* Stack content vertically */
     }
 
-    .custom-box h1 {
-        font-size: 20px; /* Sesuaikan ukuran font */
+    .content-profile-1 img {
+        max-width: 100%; /* Ensure images are responsive */
+        margin: 10px 0;
     }
 
-    .custom-box .col-md-8 p {
-        font-size: 12px; /* Sesuaikan ukuran font */
+    .quote-text p {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .quote-text .author {
+        font-size: 14px;
+    }
+
+    .quote-text .position {
+        font-size: 12px;
+    }
+
+    .visi,
+    .misi {
+        flex-direction: column; /* Stack content vertically */
+        gap: 15px; /* Adjust gap between image and text */
+    }
+
+    .visi img,
+    .misi img {
+        max-width: 100%; /* Ensure images are responsive */
+        margin: 10px 0;
+    }
+
+    .misi {
+        text-align: center;
+    }
+
+    .visi .text,
+    .misi .text {
+        text-align: center; /* Align text center for better readability */
+    }
+
+    .misi li {
+        font-size: 16px; /* Adjust font size */
+        padding-left: 25px; /* Add padding for bullet */
+    }
+
+
+    /* Responsive for image-row */
+    .image-row {
+        flex-direction: column; /* Stack images and text vertically */
+        align-items: center; /* Center the content */
+    }
+
+    .image-row img {
+        max-width: 100%; /* Make images responsive */
+        margin: 10px 0; /* Add margin between images */
+    }
+}
+
+
+/* Responsive Design for 768px */
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 15px; /* Reduce padding */
+    }
+
+    .content-profile-1 {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .content-profile-1 img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .visi,
+    .misi {
+        flex-direction: column; /* Stack content vertically */
+        gap: 10px; /* Reduce gap */
+    }
+
+    .misi img {
+        max-width: 100%; /* Ensure images are responsive */
+    }
+}
+
+/* Responsive Design for 480px */
+@media (max-width: 480px) {
+    .section {
+        padding: 20px 10px; /* Reduce padding */
+    }
+
+    .content-profile-1 h2,
+    .visi h2,
+    .misi h2 {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .content-profile-1 p,
+    .visi p,
+    .misi p {
+        font-size: 14px; /* Smaller font size */
+        line-height: 1.4;
+    }
+
+    .quote-text p {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .quote-text .author {
+        font-size: 12px;
+    }
+
+    .quote-text .position {
+        font-size: 10px;
+    }
+
+    .image-row img {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .visi img,
+    .misi img {
+        max-width: 100%; /* Ensure images are responsive */
+    }
+
+    .visi .text,
+    .misi .text {
+        text-align: center;
     }
 }
 
