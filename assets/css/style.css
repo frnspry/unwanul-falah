@@ -601,48 +601,53 @@ body {
     padding-left: 30px; /* Beri ruang untuk ikon */
 }
 
-/* Responsivitas untuk ukuran layar lebih kecil */
+/* footer */
+/* Responsif untuk layar lebih kecil */
 @media (max-width: 834px) {
-    .content-profile-1 {
-        flex-direction: column; /* Ubah menjadi kolom */
-        text-align: center;
-    }
-    .content-profile-1 img {
-        max-width: 80%; /* Gambar menyesuaikan layar */
-        margin: 10px auto; /* Pusatkan gambar */
-    }
-    .content-profile-1 .text {
-        max-width: 100%; /* Teks memenuhi lebar kontainer */
-    }
-    .image-row {
-        flex-wrap: wrap; /* Elemen akan turun ke baris berikutnya jika ruang tidak cukup */
-        justify-content: center; /* Elemen dipusatkan secara horizontal */
-        gap: 15px; /* Jarak antar elemen */
-    }
-
-    .image-row img {
-        max-width: 80%; /* Gambar mengambil 80% dari lebar layar */
-        margin: 0 auto; /* Gambar dipusatkan secara horizontal */
-        height: auto; /* Mempertahankan rasio aspek gambar */
+    .bg-img {
+        height: 20vh; /* Mengurangi tinggi untuk layar lebih kecil */
     }
 }
 
 @media (max-width: 768px) {
-    .section {
-        padding: 30px 15px; /* Kurangi padding untuk layar kecil */
+    .bg-img {
+        height: 25vh; /* Mengurangi tinggi untuk layar lebih kecil */
     }
-    .content-profile-1 {
-        gap: 15px; /* Kurangi jarak antar elemen */
+}
+
+@media (max-width: 480px) {
+    .bg-img {
+        height: 30vh; /* Mengurangi tinggi lebih kecil lagi untuk perangkat mobile */
     }
-    .quote {
-        flex-direction: column; /* Atur elemen menjadi kolom */
+}
+
+.bg-img .content {
+    padding: 20px;
+    color: white;
+}
+
+/* Responsif untuk konten */
+@media (max-width: 768px) {
+    .bg-img .content {
+        padding: 15px; /* Mengurangi padding pada layar lebih kecil */
     }
-    .quote img {
-        max-width: 100%;
-        margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+    .bg-img .content {
+        padding: 10px; /* Mengurangi padding lebih kecil lagi */
     }
-    .quote-text {
-        text-align: center; /* Pusatkan teks */
+}
+
+
+/* Untuk layar lebih kecil (mobile) */
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem 3%; /* Sesuaikan padding */
+    }
+
+    .header .navbar ul li a {
+        font-size: 14px;
         padding: 15px;
     }
     .visi, .misi {

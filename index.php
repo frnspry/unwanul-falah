@@ -101,7 +101,7 @@ include ("template/header.php");
                 <div class="text-center mb-5">
                     <h2 class="fw-bold">
                     <span class="text-dark">Kenapa</span> 
-                    <span class="text-green">Madrasah Aliyah Unwanul Falah</span><span class="text-dark">?</span> 
+                    <span class="text-green">Madrasah Aliyah Unwanul Falah</span>
                     </h2>
                 </div>
                 <div class="container"  data-aos="fade-in">
