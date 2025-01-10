@@ -32,7 +32,7 @@ include ("template/header.php");
                     <h1>Madrasah Unwanul Falah</h1>
                     <h3>Madrasah Terpadu Membangun Negeri</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero...</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="#" class="btn btn-primary border-0">Read More</a>
                     </div>
                     <!-- Kolom Kanan -->
                     <div class="col-md-4 text-center">
@@ -61,7 +61,7 @@ include ("template/header.php");
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero.
                                 </p>
-                                <a href="#" class="btn btn-primary">Info Detail <i class="bi bi-arrow-right"></i></a>
+                                <a href="#" class="btn btn-primary border-0">Info Detail <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ include ("template/header.php");
                                 <p class="card-text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero.
                                 </p>
-                                <a href="#" class="btn btn-primary">Info Detail <i class="bi bi-arrow-right"></i></a>
+                                <a href="#" class="btn btn-primary border-0">Info Detail <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ include ("template/header.php");
                                 <p class="card-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum libero..
                                 </p>
-                                <a href="#" class="btn btn-primary">Info Detail <i class="bi bi-arrow-right"></i></a>
+                                <a href="#" class="btn btn-primary border-0">Info Detail <i class="bi bi-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
