@@ -145,6 +145,7 @@ section {
     color: var(--black);
 }
 
+/* Box index awal */
 .custom-box {
     position: relative;
     top: 75%; /* Atur sesuai kebutuhan, sedikit menutupi carousel */
@@ -171,6 +172,7 @@ section {
     border-radius: 10px;
   }
 
+  /* Program kami index */
 .card {
     border: none;
     border-radius: 10px;
@@ -195,6 +197,7 @@ section {
     background-color: var(--secondary) !important; /* Bootstrap biru */
 }
 
+/* Kenapa */
 .bg-third {
     background-color: var(--third);
   }
@@ -203,20 +206,8 @@ section {
     color: var(--secondary);
 }
 
-.bg-img {
-    height: 50vh; /* Menetapkan tinggi container agar memenuhi layar */
-    background: rgba(0, 0, 0, .65) url('../img/elgato1.png'); /* Ganti dengan URL gambar Anda */
-    background-blend-mode: darken;
-    background-size: cover; /* Menyesuaikan ukuran gambar dengan ukuran container */
-    background-position: center; /* Menempatkan gambar di tengah container */
-    background-attachment: fixed; /* Gambar latar belakang tetap saat di-scroll */
-    }
 
-    .bg-img .content {
-        padding: 20px;
-        color: white;
-    }
-
+    /* tahun berdiri */
     .bag-row {
         padding: 50px 0;
     }
@@ -246,7 +237,20 @@ section {
         text-align: center;
     }
     
-    
+    /* pendaftaran */
+.bg-img {
+    height: 50vh; /* Menetapkan tinggi container agar memenuhi layar */
+    background: rgba(0, 0, 0, .65) url('../img/elgato1.png'); /* Ganti dengan URL gambar Anda */
+    background-blend-mode: darken;
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan ukuran container */
+    background-position: center; /* Menempatkan gambar di tengah container */
+    background-attachment: fixed; /* Gambar latar belakang tetap saat di-scroll */
+    }
+
+    .bg-img .content {
+        padding: 20px;
+        color: white;
+    }
 
 /* Responsive styles */
 @media (max-width: 768px) {
