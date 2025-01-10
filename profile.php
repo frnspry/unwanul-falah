@@ -7,7 +7,8 @@ include("template/header.php");
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
         <div class="carousel-inner">
             <div class="carousel-caption text-center">
-                <h3>Profile Madrasah</h3>
+                <h3>Profile</h3>
+                <p>MADRASAH ALIYAH UNWANUL FALAH</p>
             </div>
             <div class="overlay"></div>
             <div class="carousel-item active">
@@ -33,10 +34,7 @@ include("template/header.php");
                 <div>
                     <h2>SEJARAH</h2>
                     <p>
-                        el sejarah dasdadasdasda 
-                    </p>
-                    <p>
-                        dadawdasdadasdw
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt odio non nulla mollis pulvinar. Maecenas ornare velit at tellus tincidunt tempus. In ullamcorper tincidunt massa in finibus. Quisque fermentum nibh malesuada tincidunt laoreet...
                     </p>
                 </div>
             </div>
@@ -48,7 +46,7 @@ include("template/header.php");
             <div class="quote">
                 <div class="quote-text">
                     <p>
-                        KATA KATANYA MAS
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt odio non nulla mollis pulvinar. Maecenas ornare velit at tellus tincidunt tempus. In ullamcorper tincidunt massa in finibus. Quisque fermentum nibh malesuada tincidunt laoreet...
                     </p>
                     <div class="author">
                         Okta
@@ -78,21 +76,26 @@ include("template/header.php");
     <div class="container py-5" data-aos="fade-right">
         <div class="section">
             <div class="visi">
-                <h2>Visi</h2>
-                <p>
-                    el sejarah 
-                </p>
-                
+                <div class="text">
+                    <h2>Visi</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt odio non nulla mollis pulvinar. Maecenas ornare velit at tellus tincidunt tempus. In ullamcorper tincidunt massa in finibus. Quisque fermentum nibh malesuada tincidunt laoreet..</p>
+                </div>
+                <img src="assets/img/obama.png" alt="Visi">
             </div>
         </div>
     </div>
     <div class="container py-5" data-aos="fade-left">
         <div class="section">
             <div class="misi">
-                <h2>Misi</h2>
-                <p>
-                    el sejarah 
-                </p>
+                <div class="text">
+                    <h2>Misi</h2>
+                    <ul>
+                        <li>Ini adalah teks untuk misi pertama.</li>
+                        <li>Ini adalah teks untuk misi kedua.</li>
+                        <li>Ini adalah teks untuk misi ketiga.</li>
+                    </ul>
+                </div>
+                <img src="assets/img/obama.png" alt="Misi">
             </div>
         </div>
     </div>

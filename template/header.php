@@ -31,7 +31,7 @@
                 <img src="images/BlueHorizonWhite.png" alt="LogoResort" width="75%">
             </div>
             <button id="menu-btn" class="navbar-toggler">
-                <i class="bi bi-list"></i> 
+                <i class="bi bi-list" id="menu-icon"></i> <!-- Ikon Hamburger -->
             </button>
             <nav class="navbar">
                 <ul>
@@ -48,12 +48,20 @@
 <script>
     // Menunggu hingga DOM sepenuhnya dimuat
     document.addEventListener("DOMContentLoaded", function() {
-        const menuBtn = document.getElementById('menu-btn');
-        const navbar = document.querySelector('.navbar');
+    const menuBtn = document.getElementById('menu-btn');
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
 
-        // Event listener untuk toggle navbar
-        menuBtn.addEventListener('click', function() {
-            navbar.classList.toggle('active');
-        });
+    menuBtn.addEventListener('click', function() {
+        navbar.classList.toggle('active'); // Menampilkan/menyembunyikan navbar
+        if (navbar.classList.contains('active')) {
+            menuIcon.classList.remove('bi-list'); // Hapus ikon hamburger
+            menuIcon.classList.add('bi-x'); // Tambahkan ikon X
+        } else {
+            menuIcon.classList.remove('bi-x'); // Hapus ikon X
+            menuIcon.classList.add('bi-list'); // Tambahkan ikon hamburger
+        }
     });
+});
+
 </script>
