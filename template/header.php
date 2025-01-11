@@ -37,8 +37,14 @@
                 <ul>
                     <li><a href="index.php" style="text-decoration:none;">Beranda</a></li>
                     <li><a href="profile.php" style="text-decoration:none;">Profil</a></li>
-                    <li><a href="#" style="text-decoration:none;">Keunggulan</a></li>
-                    <li><a href="#" style="text-decoration:none;">Organisasi</a></li>
+                    <li><a href="keunggulan.php" style="text-decoration:none;">Keunggulan</a></li>
+                    <li class="dropdown">
+                        <a href="#" style="text-decoration:none;">Organisasi</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="intrakulikuler.php" style="text-decoration:none;">Intrakurikuler</a></li>
+                            <li><a href="ekstrakulikuler.php" style="text-decoration:none;">Ekstrakurikuler</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#" style="text-decoration:none;">Informasi</a></li>
                     <li><a href="#" style="text-decoration:none;">Perpustakaan</a></li>
                     <li><a href="#" style="text-decoration:none;">Pendaftaran</a></li>
