@@ -140,7 +140,7 @@ section {
     padding: 0;
     list-style: none;
     min-width: 150px;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 .dropdown-menu li a {
@@ -170,6 +170,26 @@ section {
 
 #menu-btn:hover {
     color: var(--secondary);
+}
+@media (max-width: 768px) {
+    #menu-btn {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+    }
+    .navbar.active {
+        display: flex;
+    }
+}
+@media (min-width: 769px) {
+    #menu-btn {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+    }
 }
 
 /* Box index awal */
