@@ -326,7 +326,14 @@ section {
         padding: 20px;
         margin-top: 30px;
         color: white;
+    }
+
+    .bg-img .content h3{
         font-size: 30px;
+    }
+
+    .bg-img .content p{
+        font-size: 15px;
     }
 
     .map-responsive iframe {
@@ -555,14 +562,14 @@ section {
     z-index: 2; /* Pastikan overlay berada di atas gambar */
 }
 
-.carousel-inner img {
+.carousel-inner.cover img {
     height: 500px; /* Ubah sesuai kebutuhan */
     object-fit: cover; /* Agar gambar tetap proporsional */
     z-index: 1;
     position: relative;
 }
 
-.carousel-caption {
+.carousel-caption.cover {
     position: absolute;
     font-size: 40px;
     top: 60%; /* Geser ke tengah vertikal */
@@ -751,28 +758,22 @@ body {
 /* Responsif untuk layar lebih kecil */
 @media (max-width: 834px) {
     .bg-img {
-        height: 20vh; /* Mengurangi tinggi untuk layar lebih kecil */
+        height: 30vh; /* Mengurangi tinggi untuk layar lebih kecil */
     }
 }
 
 @media (max-width: 768px) {
     .bg-img {
-        height: 25vh; /* Mengurangi tinggi untuk layar lebih kecil */
+        height: 30vh; /* Mengurangi tinggi untuk layar lebih kecil */
     }
 }
 
 @media (max-width: 480px) {
     .bg-img {
-        height: 30vh; /* Mengurangi tinggi lebih kecil lagi untuk perangkat mobile */
+        height: 25vh; /* Mengurangi tinggi lebih kecil lagi untuk perangkat mobile */
     }
 }
 
-.bg-img .content {
-    padding: 20px;
-    margin-top: 6px;
-    color: white;
-    font-size: 10px;
-}
 
 /* Responsif untuk konten */
 @media (max-width: 768px) {
@@ -784,6 +785,11 @@ body {
 @media (max-width: 480px) {
     .bg-img .content {
         padding: 10px; /* Mengurangi padding lebih kecil lagi */
+        margin-top:-10px;
+    }
+
+    .bg-img .content h3{
+        font-size: 15px;
     }
 }
 
@@ -975,43 +981,90 @@ body {
 
 /* Responsif untuk layar lebih kecil */
 @media (max-width: 768px) {
-    .carousel-caption {
+    .carousel-caption.cover {
         font-size: 27px; /* Ukuran font lebih kecil */
         top: 60%; /* Sedikit lebih tinggi */
     }
 }
 
 @media (max-width: 480px) {
-    .carousel-caption {
+    .carousel-caption.cover {
         font-size: 17px; /* Ukuran font lebih kecil */
         top: 65%; /* Posisi lebih tinggi */
     }
 }
 
 /* keunggulan */
-.keunggulan {
-    display: flex;
-    flex-direction: column; /* Elemen diatur vertikal */
-    align-items: center;
-    gap: 20px;
-    text-align: center;
+/* Prestasi section */
+.container.py-5.prestasi {
+    text-align: center; /* Hanya mengatur teks untuk caption */
 }
 
-.keunggulan-img {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+.container.py-5.prestasi h2 {
+    font-size: 30px;
 }
 
-.keunggulan-img img {
-    max-width: 45%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.carousel-inner.prestasi {
+    width: 100%; /* Mengisi lebar container */
+    max-width: 800px; /* Membatasi ukuran maksimal */
+    margin: 0 auto; /* Memastikan carousel berada di tengah */
+    height: 500px; /* Tinggi carousel */
+    position: relative; /* Pastikan tombol tetap berada di dalam elemen ini */
+    overflow: hidden; /* Elemen di luar area gambar tidak terlihat/klik */
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Opsional: Memberikan efek melengkung di sudut */
 }
+
+.carousel-inner.prestasi .carousel-item img {
+    width: 100%; /* Gambar memenuhi lebar carousel */
+    height: 500px; /* Tetapkan tinggi tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar menyesuaikan frame tanpa merusak proporsi */
+    border-radius: 10px; /* Opsional: Memberikan efek melengkung di sudut */
+}
+
+.carousel-control-prev.prestasi, 
+.carousel-control-next.prestasi {
+    width: 15%; /* Sesuaikan lebar tombol */
+    height: 100%; /* Tombol meliputi tinggi carousel */
+    top: 0; /* Posisikan tombol di atas carousel */
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Posisi tombol di tengah vertikal */
+    justify-content: center; /* Pusatkan ikon secara horizontal */
+
+}
+
+.carousel-control-prev.prestasi {
+    left: 110px; /* Geser tombol ke dalam lebih jauh */
+}
+
+.carousel-control-next.prestasi {
+    right: 110px; /* Geser tombol ke dalam lebih jauh */
+}
+
+.carousel-control-prev-icon.prestasi,
+.carousel-control-next-icon.prestasi {
+    width: 5rem; /* Ukuran ikon */
+    height: 3rem;
+ 
+}
+
+
 
 /* Siswa Section */
+.container.py-5.siswa {
+    text-align: center; /* Hanya mengatur teks untuk caption */
+}
+
+.container.py-5.siswa h2 {
+    font-size: 30px;
+}
+
+.container.py-5.siswa p {
+    font-size: 15px;
+}
+
 .siswa-section {
     display: flex;
     align-items: center;
@@ -1024,7 +1077,8 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    padding-left: 20px;
 }
 
 .siswa-img {
@@ -1042,11 +1096,66 @@ body {
 
 .siswa-text h2 {
     font-size: 2em;
-    color: #003366;
+    color: var(--secondary);
     margin-bottom: 15px;
 }
 
 .siswa-text p {
     font-size: 1.1em;
     line-height: 1.6;
+}
+
+/* aktivitas section */
+.container.py-5.aktivitas {
+    text-align: center; /* Hanya mengatur teks untuk caption */
+}
+
+.container.py-5.aktivitas h2 {
+    font-size: 30px;
+}
+
+.carousel-inner.aktivitas {
+    width: 100%; /* Mengisi lebar container */
+    max-width: 800px; /* Membatasi ukuran maksimal */
+    margin: 0 auto; /* Memastikan carousel berada di tengah */
+    height: 500px; /* Tinggi carousel */
+    position: relative; /* Pastikan tombol tetap berada di dalam elemen ini */
+    overflow: hidden; /* Elemen di luar area gambar tidak terlihat/klik */
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Opsional: Memberikan efek melengkung di sudut */
+}
+
+.carousel-inner.aktivitas .carousel-item img {
+    width: 100%; /* Gambar memenuhi lebar carousel */
+    height: 500px; /* Tetapkan tinggi tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar menyesuaikan frame tanpa merusak proporsi */
+    border-radius: 10px; /* Opsional: Memberikan efek melengkung di sudut */
+}
+
+.carousel-control-prev.aktivitas, 
+.carousel-control-next.aktivitas {
+    width: 15%; /* Sesuaikan lebar tombol */
+    height: 100%; /* Tombol meliputi tinggi carousel */
+    top: 0; /* Posisikan tombol di atas carousel */
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Posisi tombol di tengah vertikal */
+    justify-content: center; /* Pusatkan ikon secara horizontal */
+
+}
+
+.carousel-control-prev.aktivitas {
+    left: 110px; /* Geser tombol ke dalam lebih jauh */
+}
+
+.carousel-control-next.aktivitas {
+    right: 110px; /* Geser tombol ke dalam lebih jauh */
+}
+
+.carousel-control-prev-icon.aktivitas,
+.carousel-control-next-icon.aktivitas {
+    width: 5rem; /* Ukuran ikon */
+    height: 3rem;
+ 
 }

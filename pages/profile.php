@@ -5,8 +5,8 @@ include("../template/header.php");
 <main>
     <!-- Carousel Section -->
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-        <div class="carousel-inner">
-            <div class="carousel-caption text-center">
+        <div class="carousel-inner cover">
+            <div class="carousel-caption text-center cover">
                 <h3>Profile</h3>
                 <p>MADRASAH ALIYAH UNWANUL FALAH</p>
             </div>

@@ -2,9 +2,9 @@
 include ("template/header.php");
 ?>
         <main>
-            <div id="carouselMadrasah" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-                <div class="carousel-inner">
-                    <div class="carousel-caption text-center">
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner cover">
+                    <div class="carousel-caption text-center cover">
                         <h3>Selamat Datang</h3>
                         <p>MADRASAH ALIYAH UNWANUL FALAH</p>
                         <a href="#" class="btn btn-primary border-0">Pendaftaran</a>
