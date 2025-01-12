@@ -35,9 +35,9 @@
             </button>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.php" style="text-decoration:none;">Beranda</a></li>
-                    <li><a href="profile.php" style="text-decoration:none;">Profil</a></li>
-                    <li><a href="keunggulan.php" style="text-decoration:none;">Keunggulan</a></li>
+                    <li><a href="../index.php" style="text-decoration:none;">Beranda</a></li>
+                    <li><a href="../pages/profile.php" style="text-decoration:none;">Profil</a></li>
+                    <li><a href="../pages/keunggulan.php" style="text-decoration:none;">Keunggulan</a></li>
                     <li class="dropdown">
                         <a href="#" style="text-decoration:none;">Organisasi</a>
                         <ul class="dropdown-menu">
