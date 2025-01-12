@@ -41,8 +41,10 @@
                     <li class="dropdown">
                         <a href="#" style="text-decoration:none;">Organisasi</a>
                         <ul class="dropdown-menu">
-                            <li><a href="intrakulikuler.php" style="text-decoration:none;">Intrakurikuler</a></li>
-                            <li><a href="ekstrakulikuler.php" style="text-decoration:none;">Ekstrakurikuler</a></li>
+                            <li><a href="intrakulikuler.php" style="text-decoration:none;"
+                            class="bi bi-chevron-right">Intrakurikuler</a></li>
+                            <li><a href="ekstrakulikuler.php" style="text-decoration:none;"
+                            class="bi bi-chevron-right">Ekstrakurikuler</a></li>
                         </ul>
                     </li>
                     <li><a href="#" style="text-decoration:none;">Informasi</a></li>
@@ -57,6 +59,7 @@
     const menuBtn = document.getElementById('menu-btn');
     const menuIcon = document.getElementById('menu-icon');
     const navbar = document.querySelector('.navbar');
+    
 
     menuBtn.addEventListener('click', function() {
         navbar.classList.toggle('active'); // Menampilkan/menyembunyikan navbar
@@ -68,6 +71,7 @@
             menuIcon.classList.add('bi-list'); // Tambahkan ikon hamburger
         }
     });
+    
 });
 
 </script>
