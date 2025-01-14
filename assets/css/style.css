@@ -1139,3 +1139,61 @@ body {
     height: 3rem;
 }
 /* END KEUNGGULAN */
+
+/* ORGANISASI */
+/* aktivitas section */
+.container.py-5.eskul {
+    text-align: center; /* Hanya mengatur teks untuk caption */
+}
+
+.container.py-5.eskul h2 {
+    font-size: 30px;
+}
+
+.carousel-inner.eskul {
+    width: 100%; /* Mengisi lebar container */
+    max-width: 800px; /* Membatasi ukuran maksimal */
+    margin: 0 auto; /* Memastikan carousel berada di tengah */
+    height: 500px; /* Tinggi carousel */
+    position: relative; /* Pastikan tombol tetap berada di dalam elemen ini */
+    overflow: hidden; /* Elemen di luar area gambar tidak terlihat/klik */
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Opsional: Memberikan efek melengkung di sudut */
+}
+
+.carousel-inner.eskul .carousel-item img {
+    width: 100%; /* Gambar memenuhi lebar carousel */
+    height: 500px; /* Tetapkan tinggi tetap untuk gambar */
+    object-fit: cover; /* Memastikan gambar menyesuaikan frame tanpa merusak proporsi */
+    border-radius: 10px; /* Opsional: Memberikan efek melengkung di sudut */
+}
+
+.carousel-control-prev.eskul, 
+.carousel-control-next.eskul {
+    width: 15%; /* Sesuaikan lebar tombol */
+    height: 100%; /* Tombol meliputi tinggi carousel */
+    top: 0; /* Posisikan tombol di atas carousel */
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Posisi tombol di tengah vertikal */
+    justify-content: center; /* Pusatkan ikon secara horizontal */
+
+}
+
+.carousel-control-prev.eskul {
+    left: 110px; /* Geser tombol ke dalam lebih jauh */
+}
+
+.carousel-control-next.eskul {
+    right: 110px; /* Geser tombol ke dalam lebih jauh */
+}
+
+.carousel-control-prev-icon.eskul,
+.carousel-control-next-icon.eskul {
+    width: 5rem; /* Ukuran ikon */
+    height: 3rem;
+}
+.eskul-text p {
+    font-size: 15px; /* Adjust font size for smaller screens */
+}
