@@ -121,6 +121,24 @@ include "../template/header.php";
     </div>
     <div class="container py-5" data-aos="fade-right">
         <div class="section">
+            <div class="kurikulum">
+                <h2>
+                    Prinsip Perkembangan Kurikulum
+                </h2>
+                <ul>
+                    <li>Berpusat pada potensi, perkembangan, kebutuhan, dan kepentingan peserta didik dan lingkungannya</li>
+                    <li>Beragam dan terpadu</li>
+                    <li>Tanggap terhadap perkembangan ilmu pengetahuan, teknologi, dan seni</li>
+                    <li>Relevan dengan kebutuhan kehidupan</li>
+                    <li>Menyeluruh dan berkesinambungan</li>
+                    <li>Belajar sepanjang hayat</li>
+                    <li>Seimbang antara kepentingan nasional dan kepentingan daerah</li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+    <div class="container py-5" data-aos="fade-left">
+        <div class="section">
             <div class="mapel">
                 <div class="mapel-text">
                     <h2>

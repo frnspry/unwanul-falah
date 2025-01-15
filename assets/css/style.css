@@ -90,7 +90,10 @@ section {
     --navbar-height: 64px;
     height: var(--navbar-height);
 }
-
+.header .logo img {
+    max-width: 100px; 
+    height: auto; 
+}
 .header .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -810,8 +813,25 @@ body {
 }
 
 .misi ul {
-    list-style: none; /* Hapus gaya default untuk daftar */
-    padding-left: 0; /* Hapus padding kiri */
+    list-style: none; /* Hilangkan ikon bawaan */
+    padding-left: 0; /* Hilangkan padding default */
+}
+
+.misi ul li {
+    position: relative; /* Posisi relatif untuk mengatur ikon */
+    padding-right: 25px; /* Beri ruang di kanan untuk ikon */
+}
+
+.misi ul li::after {
+    content: ''; /* Elemen kosong untuk ikon */
+    position: absolute;
+    right: 0; /* Letakkan di sisi kanan */
+    top: 50%; /* Posisikan di tengah vertikal */
+    transform: translateY(-50%); /* Pastikan ikon sejajar tengah */
+    width: 8px; /* Ukuran ikon bulat */
+    height: 8px; /* Ukuran ikon bulat */
+    background-color: #388db2; /* Warna ikon (hitam) */
+    border-radius: 50%; /* Membuat ikon berbentuk bulat */
 }
 
 .misi li {
@@ -1085,6 +1105,31 @@ body {
     line-height: 1.6;
 }
 
+/* Kurikulum section */
+.kurikulum ul {
+    list-style: none; /* Hilangkan ikon bawaan */
+    padding-left: 0; /* Menghilangkan padding default */
+    margin: 0;
+}
+
+.kurikulum ul li {
+    font-size: 16px;
+    display: flex; /* Menyusun angka dan teks dengan flexbox */
+    justify-content: center; /* Agar teks dan angka sejajar secara horizontal */
+    align-items: center; /* Agar angka dan teks sejajar secara vertikal */
+    line-height: 1.5; /* Jarak antar baris */
+    padding-left: 25px; /* Memberikan jarak agar angka tidak terlalu dekat dengan teks */
+}
+
+.kurikulum ul li::before {
+    content: '• ';
+    font-size: 20px;
+    margin-right: 10px; /* Memberikan jarak antara angka dan teks */
+    color: #388db2;;
+}
+
+
+
 /* aktivitas section */
 .container.py-5.aktivitas {
     text-align: center; /* Hanya mengatur teks untuk caption */
@@ -1196,4 +1241,13 @@ body {
 }
 .eskul-text p {
     font-size: 15px; /* Adjust font size for smaller screens */
+}
+
+/* kontak section */
+.kontak h2{
+    font-size: 24px;
+    font-weight: 700;
+}    
+.kontak p{
+    font-size: 14px;
 }

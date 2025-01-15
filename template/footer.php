@@ -11,7 +11,7 @@
     <div class="container-fluid py-5 bg-light contact-section">
         <div class="row align-items-left">
             <div class="col-md-6 text-left text-md-start">
-                <img src="assets/img/logo.png" alt="Logo" class="mb-4 logo">
+                <img src="../assets/img/logo.png" alt="Logo" class="mb-4 logo">
                 <h4>Contact</h4>
 
                 <!-- Baris untuk Alamat -->
@@ -30,7 +30,7 @@
                         <i class="fa-solid fa-phone custom-icon"></i>
                     </div>
                     <div class="col">
-                        <p class="text-dark mb-0">0813-1914-5285</p>
+                        <p class="text-dark mb-0">(021) 87953825</p>
                     </div>
                 </div>
 

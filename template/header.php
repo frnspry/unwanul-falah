@@ -28,7 +28,7 @@
         <header>
         <header class="header">
             <div class="logo">
-                <img src="images/BlueHorizonWhite.png" alt="LogoResort" width="75%">
+                <img src="../assets/img/logo.png" alt="LogoResort" width="75%">
             </div>
             <button id="menu-btn" class="navbar-toggler">
                 <i class="bi bi-list" id="menu-icon"></i> <!-- Ikon Hamburger -->
@@ -47,6 +47,7 @@
                             class="bi bi-chevron-right">Ekstrakurikuler</a></li>
                         </ul>
                     </li>
+                    <li><a href="kontak.php"style="text-decoration:none;">Contact</a></li>
                     <li><a href="#" style="text-decoration:none;">Informasi</a></li>
                     <li><a href="#" style="text-decoration:none;">Perpustakaan</a></li>
                     <li><a href="#" style="text-decoration:none;">Pendaftaran</a></li>
