@@ -4,7 +4,7 @@
 /* SETTING AWAL */
 :root {
     --primary: #ffffff;
-    --secondary: #3498db;
+    --secondary: #0490ca;
     --third: #E8E8E8;
     --black: #333;
     --white: #fff;
@@ -830,7 +830,7 @@ body {
     transform: translateY(-50%); /* Pastikan ikon sejajar tengah */
     width: 8px; /* Ukuran ikon bulat */
     height: 8px; /* Ukuran ikon bulat */
-    background-color: #388db2; /* Warna ikon (hitam) */
+    background-color: var(--secondary); /* Warna ikon (hitam) */
     border-radius: 50%; /* Membuat ikon berbentuk bulat */
 }
 
@@ -1125,7 +1125,7 @@ body {
     content: '• ';
     font-size: 20px;
     margin-right: 10px; /* Memberikan jarak antara angka dan teks */
-    color: #388db2;;
+    color: var(--secondary);;
 }
 
 
